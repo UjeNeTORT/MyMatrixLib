@@ -16,7 +16,6 @@ int PrintMatrix(const struct matrix *matrix, FILE *stream) {
     double currEl = NAN;
 
     for (int row = 0; row < matrix->rowsNum; row++) {
-        fprintf(stream, "|| ");
         for (int col = 0; col < matrix->colsNum; col++) {
 
             currEl = *GetMatrEl(matrix, row, col);
@@ -32,7 +31,7 @@ int PrintMatrix(const struct matrix *matrix, FILE *stream) {
             }
 
         }
-        fprintf(stream, " ||\n");
+        fprintf(stream, "\n");
     }
 
     return 0;

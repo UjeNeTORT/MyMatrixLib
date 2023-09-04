@@ -1,3 +1,6 @@
+#ifndef MATRIX_H
+#define MATRIX_H
+
 struct matrix {
     double *mtx;
     int rowsNum;
@@ -22,3 +25,5 @@ struct matrix *CreateMatrix(int rowsNum, int colsNum);
  * @param [in] col col number
 */
 double *GetMatrEl(const struct matrix *matrix, const int row, const int col);
+
+#endif // MATRIX_H

@@ -1,3 +1,6 @@
+#ifndef MATRIX_MATH_H
+#define MATRIX_MATH_H
+
 #include "matrix.h"
 
 /**
@@ -52,3 +55,4 @@ double DetMatrix(const struct matrix *A);
 */
 struct matrix *GetAdditMinor (const struct matrix *A, int elRow, int elCol);
 
+#endif // MATRIX_MATH_H
